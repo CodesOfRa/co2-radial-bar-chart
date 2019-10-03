@@ -2,7 +2,7 @@
   <div id="app">
     <header class="header">
       <h1>CO2 Emissions by Country</h1>
-      <a href>
+      <a href="https://github.com/CodesOfRa/co2-radial-bar-chart">
         <h2>Github</h2>
       </a>
     </header>
@@ -11,7 +11,7 @@
       <button @click="onStart" class="action-button">Start</button>
       <button @click="onStop" class="action-button">Stop</button>
     </div>
-    <RadialChart :data="this.chartData" :year="year"></RadialChart>
+    <RadialChart :data="this.chartData" :year="year" class="center"></RadialChart>
     <footer></footer>
   </div>
 </template>
@@ -71,5 +71,9 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+}
+.center {
+  display: flex;
+  justify-content: center;
 }
 </style>
